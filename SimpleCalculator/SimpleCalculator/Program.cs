@@ -10,13 +10,15 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            InputParser Parse = new InputParser();
-            Console.WriteLine("Enter an Equation [0]>");
-            string response = Console.ReadLine();
 
+            ///user enters equation in 1+2 format
+            InputParser Parse = new InputParser();
+            Console.WriteLine("[0]>");
+            string response = Console.ReadLine();
+        
             ParseResponse.Parse(response);
             
         }
-
+        //Add a COUNTER() 
     }
 }
