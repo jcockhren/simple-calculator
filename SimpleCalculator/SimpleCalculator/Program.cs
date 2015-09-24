@@ -10,6 +10,13 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+            InputParser Parse = new InputParser();
+            Console.WriteLine("Enter an Equation [0]>");
+            string response = Console.ReadLine();
+
+            ParseResponse.Parse(response);
+            
         }
+
     }
 }
