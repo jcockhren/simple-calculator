@@ -13,12 +13,20 @@ namespace SimpleCalculator
         private char Operation { get; set; }
         public int answer { get; private set; }
 
-        public int Response(int firstInt, int SecondInt, char Operation)
-           
-        {
-            String[] Split; (
-                string[] separator,
-                 Char[] "+", "-", "*", "/", "%")
+        public int Response(int firstInt, int SecondInt, char Operation);
+         
+        
+            private void Calculate(string Operation)
+           {
+            bool isFirst = false;
+            if (isFirst)
+            {
+                answer = firstInt;
+                return;
+            }
+        
+         
+                
             switch (Operation)
             {
                 case "+":
@@ -34,7 +42,7 @@ namespace SimpleCalculator
                     answer = firstInt / SecondInt;
                     break;
                 case "%":
-                    answer = firstInt / SecondInt;
+                    answer = firstInt % SecondInt;
                     break;
                 default:
                     answer = 0;
