@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public class Subtraction 
+    class Multiply
     {
-        public int SubtractNum(int firstInt, int SecondInt)
+        public int MultiplyNum(int firstInt, int SecondInt)
         {
-            int answer =  firstInt - SecondInt;
+            int answer = firstInt * SecondInt;
             return answer;
         }
-
     }
 }

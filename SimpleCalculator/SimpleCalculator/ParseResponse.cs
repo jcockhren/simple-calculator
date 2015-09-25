@@ -19,24 +19,23 @@ namespace SimpleCalculator
             switch (Operation)
             {
                 case '+':
-                    answer = firstInt + SecondInt;
-                    break;
+                    return firstInt + SecondInt;
                 case '-':
-                    answer = firstInt - SecondInt;
-                    break;
+                    return  firstInt - SecondInt;
+                    //break;
                 case '*':
-                    answer = firstInt * SecondInt;
-                    break;
+                    return  firstInt * SecondInt;
+                   // break;
                 case '/':
-                    answer = firstInt / SecondInt;
-                    break;
+                    return  firstInt / SecondInt;
+                   // break;
                 case '%':
-                    answer = firstInt % SecondInt;
-                    break;
+                    return  firstInt % SecondInt;
+                   // break;
                 default:
                     answer = 0;
                     break;
-
+                    Console.ReadLine();
             }
             return answer;
            

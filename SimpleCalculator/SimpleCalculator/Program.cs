@@ -15,9 +15,10 @@ namespace SimpleCalculator
             InputParser Parse = new InputParser();
             Console.WriteLine("[0]>");
 
-             Console.ReadLine();
+            string response = Console.ReadLine();
         
-           
+            ParseResponse.Parse(response);
+            Console.WriteLine(response);
 
         }
         //Add a COUNTER() 

@@ -8,7 +8,7 @@ namespace SimpleCalculator
 {
     public class addition : Program
     {
-        public int Addition(int firstInt, int SecondInt)
+        public int AddNum(int firstInt, int SecondInt)
         {
             int answer = firstInt + SecondInt;
             return answer;
