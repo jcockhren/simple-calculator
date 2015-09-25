@@ -11,33 +11,33 @@ namespace SimpleCalculator
         private int firstInt { get; set; }
         private int secondInt { get; set; }
         private char Operation { get; set; }
-        public int result { get; private set; }
+        public int answer { get; private set; }
 
-        ParseResponse(int firstInt, int SecondInt, char Operation)
+        public int Response(int firstInt, int SecondInt, char Operation)
            
         {
-            String[] Split(
+            String[] Split; (
                 string[] separator,
-                 Char[] "+, -, *, /, %,")
+                 Char[] "+", "-", "*", "/", "%")
             switch (Operation)
             {
                 case "+":
-                    result = firstInt + SecondInt;
+                    answer = firstInt + SecondInt;
                     break; 
                 case "-":
-                    result = firstInt - SecondInt;
+                    answer = firstInt - SecondInt;
                     break;
                 case "*":
-                    result = firstInt * SecondInt;
+                    answer = firstInt * SecondInt;
                     break;
                 case "/":
-                    result = firstInt / SecondInt;
+                    answer = firstInt / SecondInt;
                     break;
                 case "%":
-                    result = firstInt / SecondInt;
+                    answer = firstInt / SecondInt;
                     break;
                 default:
-                    result = 0;
+                    answer = 0;
                     break;
             }
         }
