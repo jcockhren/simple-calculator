@@ -13,35 +13,24 @@ namespace SimpleCalculator
         private char Operation { get; set; }
         public int answer { get; private set; }
 
-      //  public void Response(int firstInt, int SecondInt, char Operation)
-        
+       public int Response(int firstInt, int SecondInt, char Operation)
+        { 
 
-            private void Calculate(string Operation)
-        {
-            bool isFirst = false;
-            if (isFirst)
-            {
-                answer = firstInt;
-                return;
-            }
-        
-
-            int SecondInt = 0;
             switch (Operation)
             {
-                case "+":
+                case '+':
                     answer = firstInt + SecondInt;
                     break;
-                case "-":
+                case '-':
                     answer = firstInt - SecondInt;
                     break;
-                case "*":
+                case '*':
                     answer = firstInt * SecondInt;
                     break;
-                case "/":
+                case '/':
                     answer = firstInt / SecondInt;
                     break;
-                case "%":
+                case '%':
                     answer = firstInt % SecondInt;
                     break;
                 default:
@@ -49,6 +38,7 @@ namespace SimpleCalculator
                     break;
 
             }
+            return answer;
         }
     
 
