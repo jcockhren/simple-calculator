@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class addition
+    public class addition : Program
     {
-        public int Addition(int x, int y)
+        public int Addition(int firstInt, int SecondInt)
         {
-            int answer = x + y;
+            int answer = firstInt + SecondInt;
             return answer;
+
         }
 
     }

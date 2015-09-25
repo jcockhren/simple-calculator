@@ -8,9 +8,9 @@ namespace SimpleCalculator
 {
     public class Subtraction 
     {
-        public int Subtract(int x, int y)
+        public int Subtract(int firstInt, int SecondInt)
         {
-            int answer = x - y;
+            int answer =  firstInt - SecondInt;
             return answer;
         }
 

@@ -9,7 +9,7 @@ namespace SimpleCalculator
     public class ParseResponse
     {
         private int firstInt { get; set; }
-        private int secondInt { get; set; }
+        private int SecondInt { get; set; }
         private char Operation { get; set; }
         public int answer { get; private set; }
 
@@ -39,6 +39,7 @@ namespace SimpleCalculator
 
             }
             return answer;
+           
         }
     
 
