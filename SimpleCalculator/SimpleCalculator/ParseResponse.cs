@@ -35,7 +35,7 @@ namespace SimpleCalculator
                 default:
                     answer = 0;
                     break;
-                    Console.ReadLine();
+                   
             }
             return answer;
            

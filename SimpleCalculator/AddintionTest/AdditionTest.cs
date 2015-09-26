@@ -1,15 +1,17 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace AdditionTest
+namespace CalculatorTest
 {
     [TestClass]
     public class AdditionTest
     {
         [TestMethod]
-        public void Isinteger()
+        public void AddintionTest()
         {
-            //throw new ArgumentException();
+     
+           Addintion MySum = new Addintion();
+            int answer = MySum.Addintion(1, 1);
+            Assert.AreEqual(answer, 2);
         }
     }
 }

@@ -7,8 +7,12 @@ namespace SubtractionTest
     public class SubtractionTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void subtractionTest()
         {
+
+            Subtraction MyDifference = new Subtraction();
+            int answer = MyDifference.Subtraction(5, 3);
+            Assert.AreEqual(answer, 2);
         }
     }
 }

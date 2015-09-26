@@ -1,0 +1,3 @@
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\obj\Debug\CalculatorTest.csprojResolveAssemblyReference.cache
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\obj\Debug\AddintionTest.dll
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\obj\Debug\AddintionTest.pdb
