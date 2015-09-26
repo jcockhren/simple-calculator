@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Divison
+    public class Divison
     {
         public int DivideNum(int firstInt, int SecondInt)
         {
