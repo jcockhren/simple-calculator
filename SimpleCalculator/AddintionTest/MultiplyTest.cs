@@ -12,8 +12,8 @@ namespace CalculatorTest
         public void MultiplicationTest()
         {
 
-            Multiplication MyProduct = new Multiplication();
-            int answer = MyProduct.Multiplication(5, 3);
+            Multiply MyProduct = new Multiply();
+            int answer = MyProduct.Multiply(5, 3);
             Assert.AreEqual(answer, 15);
         }
     }

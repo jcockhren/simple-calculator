@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SimpleCalculator;
 
 namespace CalculatorTest
 {
@@ -9,8 +10,8 @@ namespace CalculatorTest
         public void AddintionTest()
         {
      
-           Addintion MySum = new Addintion();
-            int answer = MySum.Addintion(1, 1);
+           addition MySum = new addition();
+            int answer = MySum.Addition(1, 1);
             Assert.AreEqual(answer, 2);
         }
     }

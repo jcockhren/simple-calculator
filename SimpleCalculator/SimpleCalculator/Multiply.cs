@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    class Multiply
+   public class Multiply
     {
         public int MultiplyNum(int firstInt, int SecondInt)
         {
