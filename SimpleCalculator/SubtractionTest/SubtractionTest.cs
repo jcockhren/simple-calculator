@@ -12,7 +12,7 @@ namespace SubtractionTest
         {
 
             Subtraction MyDifference = new Subtraction();
-            int answer = MyDifference.Subtraction(5, 3);
+            int answer = MyDifference.SubtractNum(5, 3);
             Assert.AreEqual(answer, 2);
         }
     }

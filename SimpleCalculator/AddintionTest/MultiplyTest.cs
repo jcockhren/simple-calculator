@@ -13,7 +13,7 @@ namespace CalculatorTest
         {
 
             Multiply MyProduct = new Multiply();
-            int answer = MyProduct.Multiply(5, 3);
+            int answer = MyProduct.MultiplyNum(5, 3);
             Assert.AreEqual(answer, 15);
         }
     }

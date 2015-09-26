@@ -11,7 +11,7 @@ namespace CalculatorTest
         {
      
            addition MySum = new addition();
-            int answer = MySum.Addition(1, 1);
+            int answer = MySum.AddNum(1, 1);
             Assert.AreEqual(answer, 2);
         }
     }
