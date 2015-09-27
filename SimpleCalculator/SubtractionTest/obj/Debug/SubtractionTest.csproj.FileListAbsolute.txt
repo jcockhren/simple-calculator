@@ -3,6 +3,6 @@ C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTe
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\obj\Debug\SubtractionTest.dll
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\obj\Debug\SubtractionTest.pdb
-C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\obj\Debug\SubtractionTest.csprojResolveAssemblyReference.cache
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\bin\Debug\SimpleCalculator.exe
 C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\bin\Debug\SimpleCalculator.pdb
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\SubtractionTest\obj\Debug\SubtractionTest.csprojResolveAssemblyReference.cache

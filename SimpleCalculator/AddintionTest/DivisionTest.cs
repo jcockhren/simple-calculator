@@ -11,8 +11,8 @@ namespace AddintionTest
         public void DivisonTest()
         {
 
-            Divison MyProduct = new Divison();
-            int answer = MyProduct.DivideNum(15, 3);
+            Divison MyQuotient = new Divison();
+            int answer = MyQuotient.DivideNum(15, 3);
             Assert.AreEqual(answer, 5);
         }
     }
