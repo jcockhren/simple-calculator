@@ -14,9 +14,11 @@ namespace SimpleCalculator
         public int answer { get; private set; }
 
        public int Response(int firstInt, int SecondInt, char Operation)
-        { 
-
-            switch (Operation)
+        {
+            Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+            string result = string.Split();
+            foreach (string s in result)
+                switch (Operation)
             {
                 case '+':
                     return firstInt + SecondInt;
@@ -35,7 +37,8 @@ namespace SimpleCalculator
                 default:
                     answer = 0;
                     break;
-                   
+                    
+
             }
             return answer;
            
