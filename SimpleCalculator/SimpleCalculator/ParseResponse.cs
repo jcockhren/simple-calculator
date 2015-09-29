@@ -16,12 +16,20 @@ namespace SimpleCalculator
        public int Response(int firstInt, int SecondInt, char Operation)
         {
             Char[] delimiterChars = { '+', '-', '*', '/', '%' };
-            string result = string.Split();
-            foreach (string s in result)
+            String result = Response();
+           
+                
+              String[] userEquation = result.Split(delimiterChars);
+         foreach(char delimiterChar in delimiterChars)
+            
+
+            
                 switch (Operation)
             {
                 case '+':
                     return firstInt + SecondInt;
+                    Console.WriteLine(firstInt + SecondInt);
+
                 case '-':
                     return  firstInt - SecondInt;
                     //break;
@@ -43,11 +51,15 @@ namespace SimpleCalculator
             return answer;
            
         }
-    
+
+        private string Response()
+        {
+            throw new NotImplementedException();
+        }
 
         internal static void Parse(string response)
-       {
-            //throw new NotImplementedException();
+      {
+           // throw new NotImplementedException();
         }
     }
 }

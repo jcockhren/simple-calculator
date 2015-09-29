@@ -13,12 +13,13 @@ namespace SimpleCalculator
 
             ///user enters equation in 1+2 format
             InputParser Parse = new InputParser();
-            Console.WriteLine("[0]>");
+            Console.WriteLine("[x]>");
 
             string response = Console.ReadLine();
+
         
             ParseResponse.Parse(response);
-            Console.WriteLine();
+            Console.WriteLine("= ", response );
            Console.WriteLine("Press any key to exit.");
           Console.ReadKey();
 
