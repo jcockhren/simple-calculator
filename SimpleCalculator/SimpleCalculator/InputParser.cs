@@ -12,5 +12,18 @@ namespace SimpleCalculator
 
     {
         public class ParseResponse { }
+
+        internal static string[] Split()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static string[] Split(char[] delimiterChars)
+        {
+            throw new NotImplementedException();
+
+            
+        }
+      
     }
 }

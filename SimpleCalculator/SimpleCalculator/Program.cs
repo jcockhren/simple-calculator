@@ -19,7 +19,7 @@ namespace SimpleCalculator
 
         
             ParseResponse.Parse(response);
-            Console.WriteLine("= ", response );
+            Console.WriteLine("= " + response );
            Console.WriteLine("Press any key to exit.");
           Console.ReadKey();
 
