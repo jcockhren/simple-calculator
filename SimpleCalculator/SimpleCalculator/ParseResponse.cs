@@ -17,6 +17,7 @@ namespace SimpleCalculator
         private char Operation { get; set; }
         public int answer { get; private set; }
         public static int numberOfOperators { get; private set; }
+        public char[] operatorS { get; private set; }
 
         internal static void Parse(string response)
         {
@@ -80,63 +81,67 @@ namespace SimpleCalculator
             public int FirstInt;
             public int SecondInt;
             public char Operation;
+            internal char[] operatorS;
+
+            public char operatorSymbol { get; internal set; }
         }
 
         public ParsedInput ParseInput(string consoleInput)
         {
-            string operators = "+-*       /%";
+            string operators = "+-*/%";
             int numberOfOperators = 0;
             char operatorSymbol;
 
-        foreach(char operator in operators)
-        {
-            if (consoleInput.IndexOf(operatorSymbol) != -1)
+            foreach (char operatorS in operators)
             {
-                numberOfOperators++;
-            }
-            
-            }
-         }
-            if(numberOfOperators == 1)
-        {
-            int index;
-            foreach(char operatorSymbol in operators)
-            {
-                if (consoleInput.IndexOf(operator) != -1)
+                if (consoleInput.IndexOf(operatorS) != -1)
                 {
-                    index = consoleInput.IndexOf(operator);
-                    operator = consoleInput[index];
-                       
+                    numberOfOperators++;
+                }
+                throw new ArgumentException();
+            }
+            if (numberOfOperators == 1)
+            {
+                int index;
+                foreach(char operatorS in operators)
+                {
+                    if (consoleInput.IndexOf(operatorS) != -1)
+                    {
+                        index = consoleInput.IndexOf(operatorS);
+                        operatorSymbol = consoleInput[index];
+
+                    }
+                    throw new ArgumentException();
                 }
                 
-            }
-            string[] splitInput = consoleInput.Split(operator);
-            int firstInt = int.Parse(splitInput[0]);
-            int secondInt = int.Parse(splitInput[1]);
-            ParsedInput parsed = new ParsedInput();
-            parsed.firstInt = firstInt;
-            parsed.SecondInt = secondInt;
-            parsed.operator = operator;
-            return parsed;
+
+                string[] splitInput = consoleInput.Split(operatorS);
+                int firstInt = int.Parse(splitInput[0]);
+                int secondInt = int.Parse(splitInput[1]);
+                ParsedInput parsed = new ParsedInput();
+                parsed.FirstInt = firstInt;
+                parsed.SecondInt = secondInt;
+                parsed.operatorS = operatorS;
+                return parsed;
 
 
 
                 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        } 
+            }
+            throw new ArgumentException();
+        }
 
-    }
-
-    //    private string Response()
-      //  {
-         //   throw new NotImplementedException();
-     //   }
+        //    private string Response()
+        //  {
+        //   throw new NotImplementedException();
+        //   }
 
         //internal static void Parse(string response)
-    //  {
-           // Console.WriteLine(response);
-     //   }
-   // }
+        //  {
+        // Console.WriteLine(response);
+        //   }
+        // }
+    }
 }
-
 //1+1 pass parsing class find operan that splits numbers 
