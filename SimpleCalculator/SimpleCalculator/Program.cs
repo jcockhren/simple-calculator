@@ -10,18 +10,23 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-
             ///user enters equation in 1+2 format
-            InputParser Parse = new InputParser();
-            Console.WriteLine("[x]>");
+         
+            Console.WriteLine("[0]>");
+         
 
             string response = Console.ReadLine();
+            InputParser Parse = new InputParser();
 
-        
+
             ParseResponse.Parse(response);
-            Console.WriteLine("= " + response );
+            Console.WriteLine("= " + response /*.Split() */);
+
+
            Console.WriteLine("Press any key to exit.");
-          Console.ReadKey();
+
+           string NewResponse = Console.ReadLine();
+            Console.ReadLine();
 
         }
         //Add a COUNTER() 
