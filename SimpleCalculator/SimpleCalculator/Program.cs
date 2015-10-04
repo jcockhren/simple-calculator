@@ -12,20 +12,18 @@ namespace SimpleCalculator
         {
             ///user enters equation in 1+2 format
          
-            Console.WriteLine("[0]>");
+            Console.WriteLine("[X]>");
          
 
-            string response = Console.ReadLine();
-            InputParser Parse = new InputParser();
+            string parsed = Console.ReadLine();
+            var Parse = new InputParser();
+            
 
+            ParseResponse.Parse(parsed);
+            Console.WriteLine("= " + parsed );
 
-            ParseResponse.Parse(response);
-            Console.WriteLine("= " + response /*.Split() */);
-
-
-           Console.WriteLine("Press any key to exit.");
-
-           string NewResponse = Console.ReadLine();
+            var NewParse= Console.ReadLine();
+            Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
 
         }

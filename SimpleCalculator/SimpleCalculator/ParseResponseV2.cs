@@ -17,7 +17,7 @@ namespace SimpleCalculator
         private char Operation { get; set; }
         public int answer { get; private set; }
         public static int numberOfOperators { get; private set; }
-        public char[] operatorSymbol { get; private set; }
+        public char[] operatorS { get; private set; }
 
         internal static void Parse(string response)
         {
@@ -27,7 +27,7 @@ namespace SimpleCalculator
         public int Response(int FirstInt, int SecondInt, char Operation)
         {
 
-            /*Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+            Char[] delimiterChars = { '+', '-', '*', '/', '%' };
 
             // String userEquation = Response();
             // String[] result = userEquation.Split(delimiterChars);
@@ -37,14 +37,78 @@ namespace SimpleCalculator
             String[] response = InputParser.Split(delimiterChars);
             foreach (char delimiterChar in delimiterChars)
 
-             System.Console.WriteLine(s); */
+             System.Console.WriteLine(s); 
            
+           
+            return answer;
+        }
+
+
+        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        public class ParsedInput
+        {
+            public int FirstInt;
+            public int SecondInt;
+            public char Operation;
+            internal char[] operatorS;
+
+            public char operatorSymbol { get; internal set; }
+        }
+
+        public ParsedInput ParseInput(string consoleInput)
+        {
+            string operators = "+-*/%";
+            int numberOfOperators = 0;
+            char operatorSymbol;
+
+            foreach (char operatorS in operators)
+            {
+                if (consoleInput.IndexOf(operatorS) != -1)
+                {
+                    numberOfOperators++;
+                }
+                throw new ArgumentException();
+            }
+            if (numberOfOperators == 1)
+            {
+                int index;
+                foreach(char operatorS in operators)
+                {
+                    if (consoleInput.IndexOf(operatorS) != -1)
+                    {
+                        index = consoleInput.IndexOf(operatorS);
+                        operatorSymbol = consoleInput[index];
+
+                    }
+                    throw new ArgumentException();
+                }
+                
+
+                string[] splitInput = consoleInput.Split(operatorS);
+                int firstInt = int.Parse(splitInput[0]);
+                int secondInt = int.Parse(splitInput[1]);
+                ParsedInput parsed = new ParsedInput();
+                parsed.FirstInt = firstInt;
+                parsed.SecondInt = secondInt;
+                parsed.operatorS = operatorS;
+                return parsed;
+
+
+
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            }
             {
 
-                switch (Operation)
+            /*   switch (Operation)
                 {
                     case '+':
+                        FirstInt = Convert.ToInt32(FirstInt);
+                       SecondInt = Convert.ToInt32(Console.ReadLine());
                         return FirstInt + SecondInt;
+                        
+
                     case '-':
                         return FirstInt - SecondInt;
                     //break;
@@ -63,68 +127,9 @@ namespace SimpleCalculator
 
 
                 }
-
+                */
             }
-            return answer;
-        }
-
-
-        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        public class ParsedInput
-        {
-            public int FirstInt;
-            public int SecondInt;
-            public char Operation;
-          //  internal char[] operatorS;
-
-            public char operatorS { get; internal set; }
-        }
-
-        public ParsedInput ParseInput(string consoleInput)
-        {
-            string operators = "+-*/%";
-            int numberOfOperators = 0;
-            char operatorSymbol;
-
-            foreach (char operatorSymbol in operators)
-            {
-                if (consoleInput.IndexOf(operatorSymbol) != -1)
-                {
-                    numberOfOperators++;
-                }
-                throw new ArgumentException();
-            }
-            if (numberOfOperators == 1)
-            {
-                int index;
-                foreach(char operatorSymbol in operators)
-                {
-                    if (consoleInput.IndexOf(operatorSymbol) != -1)
-                    {
-                        index = consoleInput.IndexOf(operatorSymbol);
-                        operatorS = consoleInput[index];
-
-                    }
-                    throw new ArgumentException();
-                }
-                
-
-                string[] splitInput = consoleInput.Split(operatorSymbol);
-                int FirstInt = int.TryParse(parsed, out FirstInt);
-                int SecondInt = int.TryParse(parsed, out SecondInt);
-                ParsedInput parsed = new ParsedInput();
-                parsed.FirstInt = FirstInt;
-                parsed.SecondInt = SecondInt;
-                parsed.operatorSymbol = operatorSymbol;
-                return parsed;
-
-
-
-                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            }
-             throw new ArgumentException();
+            throw new ArgumentException();
         }
 
         //    private string Response()
