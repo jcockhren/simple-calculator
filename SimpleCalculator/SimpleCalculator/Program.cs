@@ -16,10 +16,7 @@ namespace SimpleCalculator
          
 
             string parsed = Console.ReadLine();
-            var Parse = new InputParser();
-            
-
-            ParseResponse.Parse(parsed);
+         
             Console.WriteLine("= " + parsed );
 
             var NewParse= Console.ReadLine();

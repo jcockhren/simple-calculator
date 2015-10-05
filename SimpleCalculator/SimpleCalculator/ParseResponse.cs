@@ -19,10 +19,6 @@ namespace SimpleCalculator
         public static int numberOfOperators { get; private set; }
         public char[] operatorSymbol { get; private set; }
 
-        internal static void Parse(string response)
-        {
-            // throw new NotImplementedException();
-        }
 
         public int Response(int FirstInt, int SecondInt, char Operation)
         {
@@ -127,16 +123,6 @@ namespace SimpleCalculator
              throw new ArgumentException();
         }
 
-        //    private string Response()
-        //  {
-        //   throw new NotImplementedException();
-        //   }
-
-        //internal static void Parse(string response)
-        //  {
-        // Console.WriteLine(response);
-        //   }
-        // }
     }
 }
 //1+1 pass parsing class find operan that splits numbers 
