@@ -105,10 +105,8 @@ namespace SimpleCalculator
                 {
                     case '+':
                         FirstInt = Convert.ToInt32(FirstInt);
-                       SecondInt = Convert.ToInt32(Console.ReadLine());
+                        SecondInt = Convert.ToInt32(Console.ReadLine());
                         return FirstInt + SecondInt;
-                        
-
                     case '-':
                         return FirstInt - SecondInt;
                     //break;

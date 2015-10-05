@@ -23,17 +23,17 @@ namespace SimpleCalculator
         public int Response(int FirstInt, int SecondInt, char Operation)
         {
 
-            /*Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+            Char[] delimiterChars = { '+', '-', '*', '/', '%' };
 
-            // String userEquation = Response();
-            // String[] result = userEquation.Split(delimiterChars);
-            // String result = Response();
+             String userEquation = Response();
+             String[] result = string.Split(delimiterChars);
+             String result = Response();
        
             string s = new string(delimiterChars);
             String[] response = InputParser.Split(delimiterChars);
             foreach (char delimiterChar in delimiterChars)
 
-             System.Console.WriteLine(s); */
+             System.Console.WriteLine(s); 
            
             {
 
@@ -56,8 +56,6 @@ namespace SimpleCalculator
                     default:
                         throw new ArgumentException("incorrect format");
                         // break;
-
-
                 }
 
             }
@@ -74,7 +72,7 @@ namespace SimpleCalculator
             public char Operation;
           //  internal char[] operatorS;
 
-            public char operatorS { get; internal set; }
+            public char operatorSymbol { get; internal set; }
         }
 
         public ParsedInput ParseInput(string consoleInput)

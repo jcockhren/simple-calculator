@@ -8,6 +8,8 @@ namespace SimpleCalculator
 {
     public class Program
     {
+        //public static bool Operations { get; private set; }
+
         static void Main(string[] args)
         {
             ///user enters equation in 1+2 format
@@ -15,10 +17,10 @@ namespace SimpleCalculator
             Console.WriteLine("[X]>");
          
 
-            string parsed = Console.ReadLine();
+            string input = Console.ReadLine();
          
-            Console.WriteLine("= " + parsed );
-
+            Console.WriteLine("= " + input );
+          //  Console.WriteLine(Operations);
             var NewParse= Console.ReadLine();
             Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
