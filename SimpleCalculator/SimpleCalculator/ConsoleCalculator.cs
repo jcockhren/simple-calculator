@@ -10,26 +10,24 @@ namespace SimpleCalculator
     {
         private int FirstInt { get; set; }
         private int SecondInt { get; set; }
-
-        public string[] Operation(string input)
+        private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+        public string[] GetNumbers(string input)
         {
-
-            string[] Operations = input.Split('+', '-', '*', '/', '%');
-            return Operations;
-
+           
+            return input.Split(delimiterChars);
+ 
         }
-      
 
-        public class ParsedInput
+        public Char GetOperator(string input)
         {
-            public int FirstInt;
-            public int SecondInt;
-            public char Operation;
-            //  internal char[] operatorS;
+            foreach (char character in delimiterChars)
+            {
+                if (input.Contains(character)){
+                    return character;
+                }
 
-            public char operatorSymbol { get; internal set; }
-
-
+            }
+            throw new InvalidOperationException();
         }
     }
 }

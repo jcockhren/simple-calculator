@@ -8,13 +8,14 @@ namespace SimpleCalculator
 {
     public class addition : Program
     {
-        public int AddNum(int firstInt, int SecondInt)
+        public int AddNum(string[] numbers)
         {
             int answer = firstInt + SecondInt;
             return answer;
 
         }
-
+        ///chaneg to string?
+        /// //parse convert string int 
        
     }
 }

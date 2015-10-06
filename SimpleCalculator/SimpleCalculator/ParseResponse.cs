@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 
 namespace SimpleCalculator
-{
+{  /* 
     public class ParseResponse
     {
        // private static readonly bool result;
@@ -77,7 +77,7 @@ namespace SimpleCalculator
 
         public ParsedInput ParseInput(string consoleInput)
         {
-            string operators = "+-*/%";
+            string operators = "+-* /%";
             int numberOfOperators = 0;
             char operatorSymbol;
 
@@ -121,6 +121,8 @@ namespace SimpleCalculator
              throw new ArgumentException();
         }
 
-    }
-}
-//1+1 pass parsing class find operan that splits numbers 
+    } */
+}  
+//1+1 pass parsing class find operan that splits numbers  
+
+    

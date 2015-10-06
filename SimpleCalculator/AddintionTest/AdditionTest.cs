@@ -10,7 +10,7 @@ namespace CalculatorTest
         public void AddintionTest()
         {
      
-           addition MySum = new addition();
+            addition MySum = new addition();
             int answer = MySum.AddNum(1, 1);
             Assert.AreEqual(answer, 2);
         }
