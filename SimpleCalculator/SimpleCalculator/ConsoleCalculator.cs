@@ -11,6 +11,9 @@ namespace SimpleCalculator
         private int FirstInt { get; set; }
         private int SecondInt { get; set; }
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
+        private int LeftInt;
+        private int RightInt;
+
         public string[] GetNumbers(string input)
         {
            
@@ -29,5 +32,22 @@ namespace SimpleCalculator
             }
             throw new InvalidOperationException();
         }
+        public int Calculate(string input)
+        {
+            
+            //convert string ti Int
+            //use switch to call add and other methods, rework methods 
+            return ["12", "16"];
+           
+            var result = Convert.ToInt32(input);
+           
+
+        }
+        
     }
+
 }
+ 
+           ///bool parsed = Int32.TryParse(input, out result);
+           /// if (!parsed)
+            ///Console.WriteLine("Int32.TryParse could not parse '{0}' to an int.\n", input);

@@ -10,12 +10,12 @@ namespace SimpleCalculator
     {
         public int AddNum(string[] numbers)
         {
-            int answer = firstInt + SecondInt;
-            return answer;
-
+            // int answer = firstInt + SecondInt;
+            // return answer;
+            throw new NotImplementedException();
+            //throw new Modulus
+            ///change to string?
+            /// //parse convert string int 
         }
-        ///chaneg to string?
-        /// //parse convert string int 
-       
     }
 }

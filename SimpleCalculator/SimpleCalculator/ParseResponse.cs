@@ -63,60 +63,7 @@ namespace SimpleCalculator
         }
 
 
-        /// /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        public class ParsedInput
-        {
-            public int FirstInt;
-            public int SecondInt;
-            public char Operation;
-          //  internal char[] operatorS;
-
-            public char operatorSymbol { get; internal set; }
-        }
-
-        public ParsedInput ParseInput(string consoleInput)
-        {
-            string operators = "+-* /%";
-            int numberOfOperators = 0;
-            char operatorSymbol;
-
-            foreach (char operatorSymbol in operators)
-            {
-                if (consoleInput.IndexOf(operatorSymbol) != -1)
-                {
-                    numberOfOperators++;
-                }
-                throw new ArgumentException();
-            }
-            if (numberOfOperators == 1)
-            {
-                int index;
-                foreach(char operatorSymbol in operators)
-                {
-                    if (consoleInput.IndexOf(operatorSymbol) != -1)
-                    {
-                        index = consoleInput.IndexOf(operatorSymbol);
-                        operatorS = consoleInput[index];
-
-                    }
-                    throw new ArgumentException();
-                }
-                
-
-                string[] splitInput = consoleInput.Split(operatorSymbol);
-                int FirstInt = int.TryParse(parsed, out FirstInt);
-                int SecondInt = int.TryParse(parsed, out SecondInt);
-                ParsedInput parsed = new ParsedInput();
-                parsed.FirstInt = FirstInt;
-                parsed.SecondInt = SecondInt;
-                parsed.operatorSymbol = operatorSymbol;
-                return parsed;
-
-
-
-                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+      
             }
              throw new ArgumentException();
         }

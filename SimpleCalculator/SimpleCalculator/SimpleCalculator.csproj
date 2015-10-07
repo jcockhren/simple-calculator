@@ -49,7 +49,6 @@
     <Compile Include="InputParser.cs" />
     <Compile Include="Modulus.cs" />
     <Compile Include="Multiply.cs" />
-    <Compile Include="ParseResponseV2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Subtraction.cs" />
