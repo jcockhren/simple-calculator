@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SimpleCalculator
 {
     public class ConsoleCalculator
@@ -34,16 +35,42 @@ namespace SimpleCalculator
         }
         public int Calculate(string input)
         {
-            
-            //convert string ti Int
-            //use switch to call add and other methods, rework methods 
-            return ["12", "16"];
-           
-            var result = Convert.ToInt32(input);
-           
 
+            //convert string to Int
+
+           // var result = Convert.ToInt32(Console.ReadLine());
+            var result = Convert.ToInt32(input);
+
+            char Operator = default(char);
+            switch (Operator)
+            {
+                case '+':
+                    return AddNum(); //FirstInt + SecondInt;
+                case '-':
+                    return FirstInt - SecondInt;
+                //break;
+                case '*':
+                    return FirstInt * SecondInt;
+                // break;
+                case '/':
+                    return FirstInt / SecondInt;
+                // break;
+                case '%':
+                    return FirstInt % SecondInt;
+                // break;
+                default:
+                    throw new ArgumentException("incorrect format");
+                    // break;
+            }
+
+
+            //use switch to call add and other methods, rework methods
         }
-        
+
+        private int AddNum()
+        {
+            throw new NotImplementedException();
+        }
     }
 
 }

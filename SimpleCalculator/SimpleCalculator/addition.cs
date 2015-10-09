@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public class addition : Program
+    public class addition
     {
-        public int AddNum(string[] numbers)
+        public int AddNum(string[] input)
         {
-            // int answer = firstInt + SecondInt;
+            var result = Convert.ToInt32(Console.ReadLine()); //or input?
+            
+            //int answer = firstInt + SecondInt;
             // return answer;
             throw new NotImplementedException();
-            //throw new Modulus
+            return  AddNum([0]+[1]);
             ///change to string?
-            /// //parse convert string int 
+            ///parse convert string int 
+        }
+
+        public int AddNum(int v1, int v2)
+        {
+            throw new NotImplementedException();
         }
     }
 }
