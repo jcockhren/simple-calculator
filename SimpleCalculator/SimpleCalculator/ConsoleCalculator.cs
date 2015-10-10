@@ -12,8 +12,9 @@ namespace SimpleCalculator
         private int FirstInt { get; set; }
         private int SecondInt { get; set; }
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
-        private int LeftInt;
-        private int RightInt;
+        private readonly int leftNumber;
+        private int rightNumber;
+        private char Operator;
 
         public string[] GetNumbers(string input)
         {
@@ -36,27 +37,23 @@ namespace SimpleCalculator
         public int Calculate(string input)
         {
 
-            //convert string to Int
 
-           // var result = Convert.ToInt32(Console.ReadLine());
-            var result = Convert.ToInt32(input);
-
-            char Operator = default(char);
+            //build operator method
             switch (Operator)
             {
                 case '+':
-                    return AddNum(); //FirstInt + SecondInt;
+                    return AddNum(); 
                 case '-':
-                    return FirstInt - SecondInt;
+                    return leftNumber - rightNumber; 
                 //break;
                 case '*':
-                    return FirstInt * SecondInt;
+                    return leftNumber * rightNumber;
                 // break;
                 case '/':
-                    return FirstInt / SecondInt;
+                    return leftNumber/rightNumber;
                 // break;
                 case '%':
-                    return FirstInt % SecondInt;
+                    return leftNumber%rightNumber;
                 // break;
                 default:
                     throw new ArgumentException("incorrect format");
