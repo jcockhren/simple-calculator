@@ -2,16 +2,17 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimpleCalculator;
 
+
 namespace SubtractionTest
 {
     [TestClass]
     public class SubtractionTest
     {
         [TestMethod]
-        public void subtractionTest()
+        public static void SubtractNum()
         {
-
-            Subtraction MyDifference = new Subtraction();
+            //pt.InvokeStatic
+            var MyDifference = new Subtraction.InvokeStatic.SubtractNum();
             int answer = MyDifference.SubtractNum(5, 3);
             Assert.AreEqual(answer, 2);
         }

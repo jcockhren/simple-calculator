@@ -11,8 +11,8 @@ namespace AddintionTest
         public void ModTest()
         {
 
-           Modulus MyMod = new Modulus();
-            int answer = MyMod.ModulusNum(15, 3);
+            Modulus.ModulusNum([]);
+           // int answer = ModulusNum(15, 3);
             Assert.AreEqual(answer, 0);
         }
     }

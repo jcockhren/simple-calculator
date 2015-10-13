@@ -22,12 +22,16 @@ namespace SimpleCalculator
             var result = calculator.Calculate(input);
 
             Console.WriteLine("= " + result );
-          //  Console.WriteLine(Operations);
-            var NewParse= Console.ReadLine();
+
+          
             Console.WriteLine("Press any key to exit.");
             Console.ReadLine();
 
         }
         //Add a COUNTER() 
+        public static void Exit()
+        {
+
+        }
     }
 }

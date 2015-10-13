@@ -12,8 +12,7 @@ namespace SimpleCalculator
         private int FirstInt { get; set; }
         private int SecondInt { get; set; }
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
-        private readonly int leftNumber;
-        private int rightNumber;
+        
        
 
         public string[] GetNumbers(string input)
@@ -33,13 +32,11 @@ namespace SimpleCalculator
 
             }
             throw new InvalidOperationException();
+            //throw new ArgumentException("Invalid Input you didnot include a matmatic symbol");
         }
         public int Calculate(string input)
         {
-
-
-            //build operator method
-            //Char Operator = char;
+            //collecting and adding operans(the ints) and the Operators(char math operators to buils equation
             var operans = GetNumbers(input);
             var op = GetOperator(input);
             switch (op)

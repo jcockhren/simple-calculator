@@ -15,5 +15,6 @@ namespace SimpleCalculator
             return leftNumber - rightNumber;
         }
 
+        
     }
 }

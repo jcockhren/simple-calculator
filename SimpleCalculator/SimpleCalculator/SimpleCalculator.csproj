@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="addition.cs" />
     <Compile Include="ConsoleCalculator.cs" />
+    <Compile Include="Counter.cs" />
     <Compile Include="Divison.cs" />
     <Compile Include="InputParser.cs" />
     <Compile Include="Modulus.cs" />
