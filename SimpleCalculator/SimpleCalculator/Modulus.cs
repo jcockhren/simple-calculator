@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public class Modulus
+    public static class Modulus
     {
-        public int ModulusNum(int firstInt, int SecondInt)
+        public static int ModulusNum(string[] input)
         {
-            int answer = firstInt%SecondInt;
-            return answer;
+            var leftNumber = Convert.ToInt32(input[0]);
+            var rightNumber = Convert.ToInt32(input[1]);
+            return leftNumber%rightNumber;
         }
     }
 }

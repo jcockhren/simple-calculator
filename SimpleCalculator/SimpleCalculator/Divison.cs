@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public class Divison
+    public static class Divison
     {
-        public int DivideNum(int firstInt, int SecondInt)
+        public static int DivideNum(string[] input)
         {
-            int answer = firstInt/SecondInt;
-            return answer;
+            var leftNumber = Convert.ToInt32(input[0]);
+            var rightNumber = Convert.ToInt32(input[1]);
+            return leftNumber/rightNumber;
         }
     }
 }

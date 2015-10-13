@@ -50,13 +50,13 @@ namespace SimpleCalculator
                     return Subtraction.SubtractNum(operans); 
                 //break;
                 case '*':
-                    return leftNumber * rightNumber;
+                    return Multiply.MultiplyNum(operans);
                 // break;
                 case '/':
-                    return leftNumber/rightNumber;
+                    return Divison.DivideNum(operans);
                 // break;
                 case '%':
-                    return leftNumber%rightNumber;
+                    return Modulus.ModulusNum(operans);
                 // break;
                 default:
                     throw new ArgumentException("incorrect format");
