@@ -47,7 +47,7 @@ namespace SimpleCalculator
                 case '+':
                     return addition.AddNum(operans); 
                 case '-':
-                    return leftNumber - rightNumber; 
+                    return Subtraction.SubtractNum(operans); 
                 //break;
                 case '*':
                     return leftNumber * rightNumber;

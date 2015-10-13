@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace SimpleCalculator
 {
-    public class Subtraction 
+    public static class Subtraction 
     {
-        public int SubtractNum(int firstInt, int SecondInt)
+        public static int SubtractNum(string[] input)
         {
-            int answer =  firstInt - SecondInt;
-            return answer;
+            var leftNumber = Convert.ToInt32(input[0]);
+            var rightNumber = Convert.ToInt32(input[1]);
+            return leftNumber - rightNumber;
         }
 
     }
