@@ -18,8 +18,10 @@ namespace SimpleCalculator
          
 
             string input = Console.ReadLine();
-         
-            Console.WriteLine("= " + input );
+            var calculator = new ConsoleCalculator();
+            var result = calculator.Calculate(input);
+
+            Console.WriteLine("= " + result );
           //  Console.WriteLine(Operations);
             var NewParse= Console.ReadLine();
             Console.WriteLine("Press any key to exit.");

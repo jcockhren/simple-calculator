@@ -14,7 +14,7 @@ namespace SimpleCalculator
         private Char[] delimiterChars = { '+', '-', '*', '/', '%' };
         private readonly int leftNumber;
         private int rightNumber;
-        private char Operator;
+       
 
         public string[] GetNumbers(string input)
         {
@@ -23,7 +23,7 @@ namespace SimpleCalculator
  
         }
 
-        public Char GetOperator(string input)
+        public char GetOperator(string input)
         {
             foreach (char character in delimiterChars)
             {
@@ -39,10 +39,13 @@ namespace SimpleCalculator
 
 
             //build operator method
-            switch (Operator)
+            //Char Operator = char;
+            var operans = GetNumbers(input);
+            var op = GetOperator(input);
+            switch (op)
             {
                 case '+':
-                    return AddNum(); 
+                    return addition.AddNum(operans); 
                 case '-':
                     return leftNumber - rightNumber; 
                 //break;
@@ -64,10 +67,7 @@ namespace SimpleCalculator
             //use switch to call add and other methods, rework methods
         }
 
-        private int AddNum()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 
 }
