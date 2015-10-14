@@ -28,6 +28,7 @@ namespace SimpleCalculator
             {
                 if (input.Contains(character)){
                     return character;
+
                 }
 
             }
@@ -39,25 +40,24 @@ namespace SimpleCalculator
             //collecting and adding operans(the ints) and the Operators(char math operators to buils equation
             var operans = GetNumbers(input);
             var op = GetOperator(input);
+            var i = 7;
             switch (op)
             {
                 case '+':
+                    Counter.IncreaseCounter(0);
+                    Console.WriteLine("[" + Counter.IncreaseCounter(i++) + "]>");
                     return addition.AddNum(operans); 
                 case '-':
                     return Subtraction.SubtractNum(operans); 
-                //break;
                 case '*':
                     return Multiply.MultiplyNum(operans);
-                // break;
                 case '/':
                     return Divison.DivideNum(operans);
-                // break;
                 case '%':
                     return Modulus.ModulusNum(operans);
-                // break;
                 default:
                     throw new ArgumentException("incorrect format");
-                    // break;
+                    
             }
 
 
