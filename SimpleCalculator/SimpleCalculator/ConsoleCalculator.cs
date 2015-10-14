@@ -40,12 +40,10 @@ namespace SimpleCalculator
             //collecting and adding operans(the ints) and the Operators(char math operators to buils equation
             var operans = GetNumbers(input);
             var op = GetOperator(input);
-            var i = 7;
+       
             switch (op)
             {
                 case '+':
-                    Counter.IncreaseCounter(0);
-                    Console.WriteLine("[" + Counter.IncreaseCounter(i++) + "]>");
                     return addition.AddNum(operans); 
                 case '-':
                     return Subtraction.SubtractNum(operans); 
