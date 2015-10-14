@@ -1,0 +1,5 @@
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\bin\Debug\AddintionTest.dll
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\bin\Debug\AddintionTest.pdb
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\obj\Debug\AddintionTest.dll
+C:\Users\chris\Documents\GitHub\simple-calculator\SimpleCalculator\AddintionTest\obj\Debug\AddintionTest.pdb
