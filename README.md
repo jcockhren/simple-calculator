@@ -2,19 +2,19 @@
 
 ## Goal
 
-Create a Console based Calculator in C#.
+Create a Console based Calculator in C# capable of doing simple operations like addition, subtraction, division, multiplication, and modulus. 
 
 ## Rules
 
-- Everyone forks this repo (then clone your fork).
+- Fork this repo over to your account and then clone down to your machine.
 - There should be Unit Tests on all classes and methods you create.
-- Your solution should have at least 2 total projects. Unit Tests should be in it's own project.
-- This is an OOP focused class. Therefore, there will be classes. Your `Program` class and `Main` method should only be responsible for receiving user input and printing output.
-- If a user submits an incomplete command or expression, the calculator should **not** attempt to evaluate it but print out a useful message.
+- Your solution should have at least 2 total projects. Unit Tests should be in their own project.
+- This is an OOP focused class. Therefore, be sure to use classes. Your `Program` class and `Main` method should only be responsible for receiving user input and printing output (so you will need one or more classes to do handle nitty gritty bits) .
+- If a user submits an incomplete command or expression, the calculator should **not** attempt to evaluate it but print out a useful message (i.e. 'Please enter a valid command')
 
 ## Overview of how it should work
 
-Starting your console application should create a prompt that looks like:
+When your console application loads it should create a prompt that looks like:
 
 ```sh
 [x]> 
@@ -57,7 +57,7 @@ Bye!!
 
 ### Math Operations
 
-Your calculator should following operations
+Your calculator should carry out the following operations
 
 1. addition (integer)
 2. subtraction (integer)
@@ -77,7 +77,7 @@ In addition to math expressions, your calculator should accept the following com
 
 ### Constants
 
-For the chosen few, you get the implement the concept of 'constants' in the caluculator. See below for how it should work:
+For the chosen few who want to go above and beyond, you get to implement the concept of 'constants' in the caluculator. See below for how it should work:
 
 ```sh
 [0]> x = 3
